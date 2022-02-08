@@ -1,0 +1,21 @@
+https://www.bootcdn.cn/twitter-bootstrap/    找到并点击：版本：4.5.2  找到bootstrap.min.css并复制link链接，粘贴到public/index.html，然后重启
+
+报错：
+ 1 problem (1 error, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+解决：
+这个是 lint格式造成的，在总目录下新建一个vue.config.js文件，输入以下代码并重启：
+module.exports = {
+    lintOnSave:false
+}
+
+https://getbootstrap.com/docs/4.5/components/navbar/       复制页头样式
+https://getbootstrap.com/docs/4.5/utilities/spacing/               左侧的Utilities列表下的(Flex,Sizing等)都可以点击看看
+
+npm install -S uuid  //uuid报错是因为没有类型声明的ts文件
+npm install -D @types/uuid  //这个可以产生ts声明文件，modules包里有uuid/index.d.ts文件
+
+https://getbootstrap.com/docs/4.5/components/list-group/    的class,list-group-item
+
+
+组合式API使逻辑的复用更加方便，类型推导更友好

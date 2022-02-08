@@ -1,0 +1,1 @@
+console.log(process.env.NODE_ENV !== 'production', 'process.env') //true, (node src/store/i.js)
